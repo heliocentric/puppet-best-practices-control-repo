@@ -3,7 +3,7 @@
 ├── data <-- directory containing all hiera data
 │   ├── common.yaml <-- default settings across all nodes
 │   └── host
-│       └── node1c.yaml <-- settings specific to all nodes
+│       └── node1c.yaml <-- settings specific to node1c
 ├── environment.conf <-- boilerplate
 ├── hiera.yaml <-- default hiera config
 ├── manifests
