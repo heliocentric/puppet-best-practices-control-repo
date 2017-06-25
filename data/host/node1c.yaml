@@ -1,0 +1,1 @@
+profile::filebeat::config_file_location: "puppet:///modules/profile/otherconfig.yml

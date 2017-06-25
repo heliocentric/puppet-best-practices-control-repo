@@ -1,0 +1,12 @@
+---
+version: 5 # Specific version of hiera we are using, required for v4 and v5
+defaults:  # Used for any hierarchy level that omits these keys.
+  datadir: "data"         # This path is relative to hiera.yaml's directory.
+  data_hash: "yaml_data"  # Use the built-in YAML backend.
+hierarchy: # Each hierarchy consists of multiple levels
+  - name: "Hostname"
+    path: "host/%{facts.fqdn}.yaml"
+  - name: "Hostgroup"
+    path: "hostgroup/%{::hostgroup}.yaml"
+  - name: "Common"
+    path: "common.yaml"
