@@ -1,21 +1,21 @@
 ```
 .
-├── data
-│   ├── common.yaml
+├── data <-- directory containing all hiera data
+│   ├── common.yaml <-- default settings across all nodes
 │   └── host
-│       └── node1c.yaml
-├── environment.conf
-├── hiera.yaml
+│       └── node1c.yaml <-- settings specific to all nodes
+├── environment.conf <-- boilerplate
+├── hiera.yaml <-- default hiera config
 ├── manifests
-│   └── site.pp
+│   └── site.pp <-- boilerplate
 ├── README.md
-└── site
-    └── profile
+└── site <-- modules embedded in a control repo
+    └── profile <--- default profiles for your code
         ├── files
-        │   ├── config.yml
-        │   └── otherconfig.yml
+        │   ├── config.yml <--- normal config file
+        │   └── otherconfig.yml <-- node1c's config file
         └── manifests
-            └── filebeat.pp
+            └── filebeat.pp <-- filebeat profile that configures filebeat
 
 7 directories, 9 files
 ```
